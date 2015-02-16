@@ -1,3 +1,16 @@
-<h2 id='title'>Welcome to Ember.js</h2>
-
-{{outlet}}
+<div class="container-fluid">
+	<header>
+		<div class="row">
+			<div class="col-md-8">
+				<h2 id='title' class='display-inline'>Chipmunk Chat</h2>
+			</div>
+			<div class="col-md-4">
+				{{#link-to 'about' class='btn btn-default pull-right'}}About{{/link-to}}
+				{{#link-to 'chats' class='btn btn-primary pull-right'}}Open Chats{{/link-to}}
+				
+			</div>
+	</header>
+		<div class="row">
+			{{outlet}}
+		</div>
+</div>
